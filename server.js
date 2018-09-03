@@ -22,7 +22,7 @@ var requestHandler = function (request, response) {
 // read the listings.json file and create a server
 fileSystem.readFile('listings.json', 'utf8', function(err, data) {
 	if(err) { throw err; }
-    listingData = JSON.parse(data);
+    	listingData = JSON.parse(data);
 	server = http.createServer(requestHandler).listen(8080);
 	console.log("server listening on: http://localhost:8080");
 });
