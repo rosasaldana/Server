@@ -9,7 +9,7 @@ var requestHandler = function (request, response) {
 	// url contains '/listings'	
 	if (parsedUrl.pathname == '/listings') {  
 		response.writeHead(200, {'Content-Type': 'application/json'});
-    	response.write(JSON.stringify(listingData));
+    		response.write(JSON.stringify(listingData));
 	}
 	// send error if url does not contain '/listings'
 	else {
